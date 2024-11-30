@@ -4,6 +4,7 @@
   --primary-white-color: rgb(255, 255, 255);
   --navy-blue: rgb(46, 47, 66);
   --cloud: rgb(244, 244, 253);
+  --cornflower: rgb(231, 233, 252);
 
   --font-family: "Roboto", sans-serif;
   --second-family: "Raleway", sans-serif;
@@ -18,6 +19,9 @@ body {
 .team-section {
   background: var(--cloud);
 }
+.footer-section {
+  background: var(--navy-blue);
+}
 .logo {
   font-weight: 800;
   font-size: 18px;
@@ -25,6 +29,9 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
+}
+.logo.footer {
+  color: var(--cloud);
 }
 .logo-span {
   color: var(--primary-blue-color);
@@ -72,7 +79,19 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+.text.footer {
+  color: var(--cornflower);
+}
 .btn {
-  background-color: var(--primary-blue-color);
+  background: var(--primary-blue-color);
   cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--primary-white-color);
+}
+.btn.portfolio {
+  background: var(--cloud);
+  color: var(--primary-blue-color);
 }
