@@ -1,12 +1,22 @@
 :root {
   --primary-text-color: rgb(67, 68, 85);
   --primary-blue-color: rgb(77, 90, 229);
+  --primary-white-color: rgb(255, 255, 255);
+  --navy-blue: rgb(46, 47, 66);
+  --cloud: rgb(244, 244, 253);
+
   --font-family: "Roboto", sans-serif;
   --second-family: "Raleway", sans-serif;
 }
 body {
   font-family: var(--font-family);
   color: var(--primary-text-color);
+}
+.hero-section {
+  background: var(--navy-blue);
+}
+.team-section {
+  background: var(--cloud);
 }
 .logo {
   font-weight: 800;
@@ -30,15 +40,39 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-.hero.title{
+
+.contact {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+.hero.title {
   font-size: 48px;
+  color: var(--primary-white-color);
+  text-align: center;
 }
 .title {
-  font-family: var(--font-family);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  color: var(--navy-blue);
   text-align: center;
- 
+}
+.subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.btn {
+  background-color: var(--primary-blue-color);
+  cursor: pointer;
 }
