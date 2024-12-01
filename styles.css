@@ -13,6 +13,10 @@ body {
   font-family: var(--font-family);
   color: var(--primary-text-color);
 }
+.container {
+  width: 1158px;
+  margin: 0 auto;
+}
 .hero-section {
   background: var(--navy-blue);
 }
@@ -20,7 +24,7 @@ body {
   background: var(--cloud);
 }
 .footer-section {
-  background: var(--navy-blue);
+  background-color: var(--navy-blue);
 }
 .logo {
   font-weight: 800;
