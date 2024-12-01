@@ -33,10 +33,18 @@ img {
 .container {
   width: 1158px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.section {
+  margin-bottom: 120px;
+  outline: 2px solid red;
 }
 .hero-section {
   background: var(--navy-blue);
   text-align: center;
+  padding-top: 188px;
+  padding-bottom: 292px;
 }
 .team-section {
   background: var(--cloud);
@@ -104,6 +112,7 @@ img {
   color: var(--cornflower);
 }
 .btn {
+  margin-top: 48px;
   background: var(--primary-blue-color);
   cursor: pointer;
   font-weight: 500;
@@ -111,6 +120,10 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--primary-white-color);
+
+  border-radius: 4px;
+  padding: 16px 32px;
+  border-color: transparent;
 }
 .btn.portfolio {
   background: var(--cloud);
