@@ -13,12 +13,30 @@ body {
   font-family: var(--font-family);
   color: var(--primary-text-color);
 }
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+img {
+  display: block;
+}
 .container {
   width: 1158px;
   margin: 0 auto;
 }
 .hero-section {
   background: var(--navy-blue);
+  text-align: center;
 }
 .team-section {
   background: var(--cloud);
@@ -61,7 +79,6 @@ body {
 .hero.title {
   font-size: 48px;
   color: var(--primary-white-color);
-  text-align: center;
 }
 .title {
   font-weight: 700;
