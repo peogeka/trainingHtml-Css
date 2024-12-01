@@ -38,7 +38,9 @@ img {
 }
 .section {
   margin-bottom: 120px;
-  outline: 2px solid red;
+}
+.header-section {
+  border-bottom: 1px solid var(--cornflower);
 }
 .hero-section {
   background: var(--navy-blue);
@@ -128,4 +130,5 @@ img {
 .btn.portfolio {
   background: var(--cloud);
   color: var(--primary-blue-color);
+  margin-top: 0px;
 }
