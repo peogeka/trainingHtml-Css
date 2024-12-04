@@ -31,13 +31,13 @@ img {
   display: block;
 }
 .container {
-  width: 1158px;
+  max-width: 1158px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
 }
 .section {
-  margin-bottom: 120px;
+  padding-bottom: 120px;
+  padding-top: 120px;
 }
 .header-section {
   border-bottom: 1px solid var(--cornflower);
@@ -48,11 +48,17 @@ img {
   padding-top: 188px;
   padding-bottom: 292px;
 }
+
+.section.about {
+  padding-top: 0px;
+}
 .team-section {
   background: var(--cloud);
 }
 .footer-section {
   background-color: var(--navy-blue);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .logo {
   font-weight: 800;
@@ -89,6 +95,7 @@ img {
 .hero.title {
   font-size: 48px;
   color: var(--primary-white-color);
+  margin-bottom: 0px;
 }
 .title {
   font-weight: 700;
@@ -97,6 +104,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--navy-blue);
   text-align: center;
+  margin-bottom: 72px;
 }
 .subtitle {
   font-weight: 500;
@@ -104,6 +112,8 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
+  /* margin-top: 32px; */
+  margin-bottom: 8px;
 }
 .text {
   font-size: 16px;
@@ -112,9 +122,13 @@ img {
 }
 .text.footer {
   color: var(--cornflower);
+  margin-top: 16px;
 }
 .btn {
   margin-top: 48px;
+  border-radius: 4px;
+  padding: 16px 32px;
+
   background: var(--primary-blue-color);
   cursor: pointer;
   font-weight: 500;
@@ -123,12 +137,11 @@ img {
   letter-spacing: 0.04em;
   color: var(--primary-white-color);
 
-  border-radius: 4px;
-  padding: 16px 32px;
   border-color: transparent;
 }
 .btn.portfolio {
+  margin-top: 0px;
+
   background: var(--cloud);
   color: var(--primary-blue-color);
-  margin-top: 0px;
 }
