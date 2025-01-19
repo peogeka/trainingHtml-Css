@@ -33,14 +33,36 @@ img {
 .container {
   max-width: 1158px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .section {
   padding-bottom: 120px;
   padding-top: 120px;
 }
+.container.header {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .header-section {
   border-bottom: 1px solid var(--cornflower);
+}
+.main-nav {
+  display: flex;
+}
+.list.nav {
+  display: flex;
+  margin-left: 76px;
+}
+.list.nav > .item:not(:last-child) {
+  margin-right: 40px;
+}
+.addres {
+  margin-left: auto;
+}
+.addres > a:not(:last-child) {
+  margin-right: 40px;
 }
 .hero-section {
   background: var(--navy-blue);
@@ -49,8 +71,38 @@ img {
   padding-bottom: 292px;
 }
 
+.container.rules > .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item-rules {
+  width: calc((100% - 72px) / 4);
+  margin-right: 24px;
+}
+.item-rules:last-child {
+  margin-right: 0;
+}
+
 .section.about {
   padding-top: 0px;
+}
+.list.about {
+  display: flex;
+}
+.item-about:not(:last-child) {
+  margin-right: 24px;
+}
+.list.team {
+  display: flex;
+}
+.item-team:not(:last-child) {
+  margin-right: 24px;
+}
+.team-info {
+  background-color: var(--primary-white-color);
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .team-section {
   background: var(--cloud);
@@ -85,12 +137,20 @@ img {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
+.navigation:hover,
+.navigation:focus {
+  color: var(--primary-blue-color);
+}
 
 .contact {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+}
+.contact:hover,
+.contact:focus {
+  color: var(--primary-blue-color);
 }
 .hero.title {
   font-size: 48px;
@@ -139,9 +199,54 @@ img {
 
   border-color: transparent;
 }
+.btn:hover{
+  background-color: #404bbf;
+}
+/* Css for Portfolio */
 .btn.portfolio {
   margin-top: 0px;
 
-  background: var(--cloud);
+  background-color: var(--cloud);
   color: var(--primary-blue-color);
+}
+.btn.portfolio:hover,
+.btn.portfolio:focus {
+  background-color: var(--primary-blue-color);
+  color: var(--primary-white-color);
+}
+
+.section-portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+.list.button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+.item-btn:not(:last-child) {
+  margin-right: 24px;
+}
+.list.example {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item-example {
+  margin-right: 24px;
+  margin-bottom: 48px;
+}
+.item-example:nth-child(3n) {
+  margin-right: 0px;
+}
+.item-example:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.text-example {
+  background-color: var(--primary-white-color);
+  border: 1px solid var(--cornflower);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border-top: 0;
 }
