@@ -5,6 +5,7 @@
   --navy-blue: rgb(46, 47, 66);
   --cloud: rgb(244, 244, 253);
   --cornflower: rgb(231, 233, 252);
+  --grey: rgba(46, 47, 66, 0.7);
 
   --font-family: "Roboto", sans-serif;
   --second-family: "Raleway", sans-serif;
@@ -65,7 +66,12 @@ img {
   margin-right: 40px;
 }
 .hero-section {
-  background: var(--navy-blue);
+  background-color: var(--grey);
+  background-image: url(./images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+
   text-align: center;
   padding-top: 188px;
   padding-bottom: 292px;
@@ -94,6 +100,10 @@ img {
 }
 .list.team {
   display: flex;
+}
+.item-team {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .item-team:not(:last-child) {
   margin-right: 24px;
@@ -199,7 +209,7 @@ img {
 
   border-color: transparent;
 }
-.btn:hover{
+.btn:hover {
   background-color: #404bbf;
 }
 /* Css for Portfolio */
@@ -234,6 +244,10 @@ img {
 .item-example {
   margin-right: 24px;
   margin-bottom: 48px;
+}
+.item-example:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .item-example:nth-child(3n) {
   margin-right: 0px;
