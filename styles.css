@@ -61,16 +61,21 @@ img {
 }
 .addres {
   margin-left: auto;
+  font-style: normal;
 }
 .addres > a:not(:last-child) {
   margin-right: 40px;
 }
 .hero-section {
-  background-color: var(--grey);
-  background-image: url(./images/people-office.jpg);
+  height: 600px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: overlay;
+  background-size: contain;
+  background-image: linear-gradient(to bottom, var(--grey), var(--grey)),
+    url(./images/people-office.jpg);
+  background-color: var(--grey);
 
   text-align: center;
   padding-top: 188px;
@@ -88,7 +93,27 @@ img {
 .item-rules:last-child {
   margin-right: 0;
 }
-
+.item-rules::before {
+  content: "";
+  display: block;
+  height: 112px;
+  background: var(--cloud);
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.item-rules:nth-child(1)::before {
+  background-image: url(./images/antenna.svg);
+}
+.item-rules:nth-child(2)::before {
+  background-image: url(./images/clock.svg);
+}
+.item-rules:nth-child(3)::before {
+  background-image: url(./images/diagram.svg);
+}
+.item-rules:nth-child(4)::before {
+  background-image: url(./images/astronaut.svg);
+}
 .section.about {
   padding-top: 0px;
 }
@@ -123,6 +148,7 @@ img {
   padding-bottom: 100px;
 }
 .logo {
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 133%;
