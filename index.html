@@ -24,7 +24,7 @@
           >
           <ul class="list nav">
             <li class="item">
-              <a href="./index.html" class="list navigation">Studio</a>
+              <a href="./index.html" class="list navigation current">Studio</a>
             </li>
             <li class="item">
               <a href="./portfolio.html" class="list navigation">Portfolio</a>
@@ -522,7 +522,11 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button data-modal-close>Close</button>
+        <button type="button" class="btn-close" data-modal-close>
+          <svg width="8px" height="8px">
+            <use href="./images/symbol-defs.svg#icon-close-black"></use>
+          </svg>
+        </button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
