@@ -507,13 +507,14 @@ img {
 
   background-color: var(--primary-white-color);
   border-radius: 4px;
-  width: 408px;
-  height: 576px;
+  min-width: 408px;
+  min-height: 576px;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 1px 1px 0 rgba(0, 0, 0, 0.14);
   transition: transform 250ms var(--timing-function);
   padding-left: 24px;
   padding-right: 24px;
+  padding-bottom: 24px;
 }
 .btn-close {
   display: flex;
@@ -572,6 +573,7 @@ img {
 }
 .block-label {
   position: relative;
+  margin-top: 4px;
 }
 
 .modal-input {
@@ -594,9 +596,10 @@ img {
   height: 120px;
   border: 1px solid var(--navy-blue-modal);
   border-radius: 4px;
+  margin-top: 4px;
   outline: transparent;
 }
-.modal-textarea:focus{
+.modal-textarea:focus {
   border-color: var(--primary-blue-color);
 }
 .modal-textarea::placeholder {
@@ -614,6 +617,61 @@ img {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
+}
+.block-checkbox {
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+.label-checkbox {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.checkbox-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid var(--navy-blue-modal);
+  fill: transparent;
+}
+.text-checkbox {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: var(--light-slate);
+}
+.block-checkbox {
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+.input-checkbox:checked + .label-checkbox > .checkbox-modal {
+  background-color: var(--ocean);
+  fill: var(--primary-white-color);
+}
+.block-btn {
+  display: flex;
+  justify-content: center;
+}
+.modal-button {
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: var(--primary-blue-color);
+  border-color: transparent;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--primary-white-color);
 }
 @keyframes example {
   0% {

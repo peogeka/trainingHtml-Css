@@ -539,7 +539,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hiidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="btn-close" data-modal-close>
           <svg width="8px" height="8px">
@@ -568,7 +568,9 @@
           </div>
 
           <div class="modal-field">
-            <label for="phone" class="text-label" autocomplete="off">Phone</label>
+            <label for="phone" class="text-label" autocomplete="off"
+              >Phone</label
+            >
             <div class="block-label">
               <input
                 type="tel"
@@ -584,7 +586,9 @@
           </div>
 
           <div class="modal-field">
-            <label for="email" class="text-label" autocomplete="off">Email</label>
+            <label for="email" class="text-label" autocomplete="off"
+              >Email</label
+            >
             <div class="block-label">
               <input
                 type="email"
@@ -606,8 +610,29 @@
             placeholder="Text input"
             class="modal-textarea"
           ></textarea>
+          <div class="block-checkbox">
+            <input
+              type="checkbox"
+              name="privacy-policy"
+              id="privacy-policy"
+              class="input-checkbox visually-hidden"
+            />
+            <label for="privacy-policy" class="label-checkbox">
+              <span class="checkbox-modal">
+                <svg width="10" height="8" aria-hidden="true">
+                  <use href="./images/vector.svg#icon-Vector"></use>
+                </svg>
+              </span>
+              <span class="text-checkbox">
+                I accept the terms and conditions of the
+                <a href="#">Privacy Policy</a>
+              </span>
+            </label>
+          </div>
 
-          <button type="submit" class="modal-button">Send</button>
+          <div class="block-btn">
+            <button type="submit" class="modal-button">Send</button>
+          </div>
         </form>
       </div>
     </div>
