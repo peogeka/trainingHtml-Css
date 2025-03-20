@@ -44,7 +44,12 @@
           >
         </address>
 
-        <button type="button" class="btn-burger-menu">
+        <button
+          type="button"
+          class="btn-burger-menu"
+          data-burger-open
+          aria-expanded="false"
+        >
           <svg class="svg-burger-menu">
             <use
               href="./images/menu-burger.svg#icon-charm_menu-hamburger"
@@ -53,30 +58,33 @@
           </svg>
         </button>
       </div>
-      <div class="burger-menu">
+      <div data-burger class="burger-menu is-hidden">
         <div>
+          <button type="button" class="btn-close" data-burger-close>
+            <svg width="8px" height="8px">
+              <use href="./images/symbol-defs.svg#icon-close-black"></use>
+            </svg>
+          </button>
           <ul class="list-burger nav">
-            <li class="item">
-              <a href="./index.html" class="list navigation current">Studio</a>
+            <li class="item-burger">
+              <a href="./index.html" class="list burger-current">Studio</a>
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="list navigation">Portfolio</a>
+            <li class="item-burger">
+              <a href="./portfolio.html" class="list">Portfolio</a>
             </li>
-            <li class="item">
-              <a href="./contact.html" class="list navigation">Contacts</a>
+            <li class="item-burger">
+              <a href="./contact.html" class="list">Contacts</a>
             </li>
           </ul>
         </div>
         <div>
           <address class="addres-burger">
-            <a href="mailto:info@devstudio.com" class="list contact"
+            <a href="tel:+110001111111" class="list tel">+11 (000) 111-11-11</a>
+            <a href="mailto:info@devstudio.com" class="list mail"
               >info@devstudio.com</a
             >
-            <a href="tel:+110001111111" class="list contact"
-              >+11 (000) 111-11-11</a
-            >
           </address>
-          <div class="social-icon">
+          <div class="social-icon-burger">
             <ul class="list">
               <li class="item">
                 <a
@@ -86,7 +94,7 @@
                   aria-label="Instagram"
                   class="social-link"
                 >
-                  <svg width="16" height="16">
+                  <svg width="24" height="24">
                     <use href="./images/sprite.svg#icon-instagram"></use>
                   </svg>
                 </a>
@@ -99,7 +107,7 @@
                   aria-label="Twitter"
                   class="social-link"
                 >
-                  <svg width="16" height="16">
+                  <svg width="24" height="24">
                     <use href="./images/sprite.svg#icon-twitter"></use>
                   </svg>
                 </a>
@@ -112,7 +120,7 @@
                   aria-label="Facebook"
                   class="social-link"
                 >
-                  <svg width="16" height="16">
+                  <svg width="24" height="24">
                     <use href="./images/sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>
@@ -125,7 +133,7 @@
                   aria-label="LinkedIn"
                   class="social-link"
                 >
-                  <svg width="16" height="16">
+                  <svg width="24" height="24">
                     <use href="./images/sprite.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -728,5 +736,6 @@
       </div>
     </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/burger.js"></script>
   </body>
 </html>
